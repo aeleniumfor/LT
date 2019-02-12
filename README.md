@@ -9,4 +9,4 @@
 - [クリスマスのやつ](https://www.slideshare.net/sasenomura/ss-70415951)
 
 ## Qiita
-- [qiitaの記事h](ttps://qiita.com/aeleniumfor)
+- [qiitaの記事](https://qiita.com/aeleniumfor)
