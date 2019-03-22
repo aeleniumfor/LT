@@ -9,3 +9,7 @@ EKSを選択する場合のingress controllrはaws-ingress-controllerがデフ�
 
 ## IBM kubernetes IKSがかなり良さそう
 kubernetesのfreeプランがある
+
+## aws kubernetesを構築する
+eksを構築するのは大変.なのでeksctlを使うといいだろう
+コマンドを実行することでeksクラスタを組んでくれる
