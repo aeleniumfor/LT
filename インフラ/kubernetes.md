@@ -8,7 +8,8 @@ GKEにはβ版としてistioを入れてくれるがeksはそんなことはな�
 EKSを選択する場合のingress controllrはaws-ingress-controllerがデファクトスタンダード
 
 ## IBM kubernetes IKSがかなり良さそう
-kubernetesのfreeプランがある
+kubernetesのfreeプランがある  
+istioを実験的にいれてくれる
 
 ## aws kubernetesを構築する
 eksを構築するのは大変.なのでeksctlを使うといいだろう
