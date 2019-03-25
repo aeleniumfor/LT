@@ -12,5 +12,5 @@ kubernetesのfreeプランがある
 istioを実験的にいれてくれる
 
 ## aws kubernetesを構築する
-eksを構築するのは大変.なのでeksctlを使うといいだろう
+eksを構築するのは大変.なのでeksctlを使うといいだろう  
 コマンドを実行することでeksクラスタを組んでくれる
