@@ -21,4 +21,30 @@ Server:
 ```
 インストール完了
 
-## containerdのコマンド
+## containerdでnginxを動かす
+### nginxのimageをpullしてくる  
+```bash
+$ ctr i pull docker.io/library/nginx:latest
+```
+`$ ctr i ls`でimageがpullされたか確認できる
+
+### nginxのコンテナを作る
+```
+$ ctr c create docker.io/library/nginx:latest nginx
+```
+`docker.io/library/nginx:latest`はさっきpullしてきたimageの名前  
+そして`nginx`はIDになるので任意の文字を与えるといい  
+コンテナが作成されたか確認する
+```
+$  ctr c ls
+CONTAINER    IMAGE                             RUNTIME                           
+nginx        docker.io/library/nginx:latest    io.containerd.runtime.v1.linux
+```
+
+### nginxコンテナを動かす
+createしただけでは動かないのでスタートさせる  
+```
+$ ctr task start nginx
+
+```
+何もエラーが表示されていなければ動いているだろう
