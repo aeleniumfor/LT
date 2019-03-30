@@ -21,6 +21,16 @@ Server:
 ```
 インストール完了
 
+## ansibleでinstallする場合
+上でinstallした場合は必要ない  
+ansibleでインストールできるものを用意した
+
+```bash
+$ git clone https://github.com/aeleniumfor/ansible-code.git
+$ sh ansible.sh
+```
+以上
+
 ## containerdでnginxを動かす
 ### nginxのimageをpullしてくる  
 ```bash
