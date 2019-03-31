@@ -23,7 +23,9 @@ Server:
 
 ## ansibleでinstallする場合
 上でinstallした場合は必要ない  
-ansibleでインストールできるものを用意した
+ansibleでインストールできるものを用意した  
+hosts.sampleを参考にipとkeyの設定を行えばcontainerdをインストールできる  
+想定OSはCentos7だ
 
 ```bash
 $ git clone https://github.com/aeleniumfor/ansible-code.git
