@@ -5,3 +5,6 @@ flannelとetcdを連携すると複数のホストでipを共有することが�
 
 ## docker buildについて
 docker build時に環境変数を渡したいときはArgを使う
+
+## dockerの内部について
+containerdを使っているようだ
