@@ -1,7 +1,8 @@
 ## ETCDとは  
 分散KVSの一つ似たものとしてConsulがある  
-keyとvuleを分散して保存することができる.  
+keyとvuleのデータをクラスタ内で分散して保存することができる.  
 kubernetesのシステムの状態を持っているそうな  
+
 
 ## Consulとetcdの違い
 最近までconsulとetcdを競合のツールだと考えていたがどうやら違う  
