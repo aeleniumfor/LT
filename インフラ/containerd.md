@@ -60,3 +60,17 @@ $ ctr task start nginx
 
 ```
 何もエラーが表示されていなければ動いているだろう
+
+## containerdコンテナの後かたずけ
+### 起動しているコンテナをすべてkillする
+```bash
+$ ctr t kill -s 9 $(ctr t ls -q)
+```
+### Killしたコンテナをdeleteする
+```bash
+$ ctr t delete $(ctr t ls -q)
+```
+### 作成したコンテナを一括削除
+```bass
+$ ctr c delete $(ctr c ls -q)
+```
