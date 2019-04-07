@@ -57,7 +57,7 @@ nginx        docker.io/library/nginx:latest    io.containerd.runtime.v1.linux
 createしただけでは動かないのでスタートさせる  
 ```
 $ ctr task start nginx
-
+$ ctr t ls
 ```
 何もエラーが表示されていなければ動いているだろう
 
