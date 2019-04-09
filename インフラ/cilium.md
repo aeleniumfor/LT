@@ -1,2 +1,5 @@
 ## cilium
-ネットワークのポリシー
+ネットワークのポリシーを定義することができる
+例)service1,service2,service3とあり
+service1はservice2に対してアクセスすることができるが
+service3にはアクセスできないようにするなどを行うことができる
