@@ -41,13 +41,13 @@ $ ctr i pull docker.io/library/nginx:latest
 `$ ctr i ls`でimageがpullされたか確認できる
 
 ### nginxのコンテナを作る
-```
+```bash
 $ ctr c create docker.io/library/nginx:latest nginx
 ```
 `docker.io/library/nginx:latest`はさっきpullしてきたimageの名前  
 そして`nginx`はIDになるので任意の文字を与えるといい  
 コンテナが作成されたか確認する
-```
+```bash
 $  ctr c ls
 CONTAINER    IMAGE                             RUNTIME                           
 nginx        docker.io/library/nginx:latest    io.containerd.runtime.v1.linux
@@ -55,7 +55,7 @@ nginx        docker.io/library/nginx:latest    io.containerd.runtime.v1.linux
 
 ### nginxコンテナを動かす
 createしただけでは動かないのでスタートさせる  
-```
+```bash
 $ ctr task start nginx
 $ ctr t ls
 ```
@@ -71,6 +71,13 @@ $ ctr t kill -s 9 $(ctr t ls -q)
 $ ctr t delete $(ctr t ls -q)
 ```
 ### 作成したコンテナを一括削除
-```bass
+```bash
 $ ctr c delete $(ctr c ls -q)
+```
+
+## containerdの設定ファイルを設置する
+containerdは`/etc/containerd/config.toml`かcontainerdコマンドのオプションを付与することで設定を読むことができる
+```bash
+$ mkdir -p /etc/containerd/
+$ containerd config default > /etc/containerd/config.toml
 ```
