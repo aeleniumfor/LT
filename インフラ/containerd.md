@@ -61,6 +61,13 @@ $ ctr t ls
 ```
 何もエラーが表示されていなければ動いているだろう
 
+### ctr runで動かす
+基本的にはこっちの方が簡単だろう
+```bash
+$ ctr i pull docker.io/library/nginx:latest
+$ ctr run docker.io/library/nginx:latest
+```
+
 ## containerdコンテナの後かたずけ
 ### 起動しているコンテナをすべてkillする
 ```bash
