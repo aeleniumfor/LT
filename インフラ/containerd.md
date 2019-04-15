@@ -89,4 +89,5 @@ $ mkdir -p /etc/containerd/
 $ containerd config default > /etc/containerd/config.toml
 ```
 ## APIの提供
-GRPCを使ってコンテナを制御することができる
+GRPCを使ってコンテナを制御することができる.
+docker-engineもcontainerdのAPIを使用している
