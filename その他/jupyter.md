@@ -4,4 +4,17 @@
 ## 対応
 python,julia,C++
 
-## docker
+## docker-compose 
+```yaml
+version: '2.2'
+services:
+  jupyter:
+    image: jupyter/datascience-notebook
+    environment:
+      JUPYTER_ENABLE_LAB: 1
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/home/jovyan/work
+    command: start-notebook.sh --NotebookApp.token=''
+```
