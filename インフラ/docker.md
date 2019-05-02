@@ -9,3 +9,6 @@ docker build時に環境変数を渡したいときはArgを使う
 
 ## dockerの内部について
 containerdを使っているようだ
+
+## dockerにipを振りたくない場合
+`$ docker run --network none alpine`
